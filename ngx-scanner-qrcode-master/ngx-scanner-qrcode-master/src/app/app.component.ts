@@ -93,6 +93,9 @@ export class AppComponent implements AfterViewInit {
     const constrains = this.action.getConstraints();
     console.log(constrains);
   }
+  toggleDyslexiaFont(): void {
+    document.body.classList.toggle('dyslexia-font');
+  }
   
   public applyConstraints() {
     const constrains = this.action.applyConstraints({
